@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Github user app</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="container_1">
+        <div class="finder">
+          <span class="finder_span">
+            <h3>devfinder</h3>
+            <p>
+              Dark
+              <img
+                src="./assets/icon-moon.svg"
+                class="icon moon_icon"
+                alt="moon"
+              />
+            </p>
+          </span>
+        </div>
+        <!-- <div class="nav_container"></div> -->
+        <div class="search_bar">
+          <form action="" id="user_form" autocomplete="off">
+            <img
+              src="./assets/icon-search.svg"
+              class="icon search_icon"
+              alt="search"
+            />
+            <input
+              type="text"
+              id="input_text"
+              placeholder="Search Github user"
+            />
+            <button class="btn" type="submit">search</button>
+          </form>
+        </div>
+        <div class="info_container">
+          <img src="./assets/git_logo.png" alt="full logo" class="git_logo" />
+          <nav class="user_info">
+            <div>
+              <h3 class="user_name">The Octocat</h3>
+              <span>#Octocat</span>
+              <p class="date">Joined 25 Jan 2011</p>
+              <p class="lorem" id="bio">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quasi
+                temporibus laborum, perspiciatis dolorum in illo.
+              </p>
+            </div>
+          </nav>
+          <div class="info_container1">
+            <div class="bio_container">
+              <div class="content_container">
+                <span class="biometrics">repos</span>
+                <h2 class="info" id="repos">8</h2>
+              </div>
+              <div class="content_container">
+                <span class="biometrics">followers</span>
+
+                <h2 class="info" id="followers">3938</h2>
+              </div>
+              <div class="content_container">
+                <span class="biometrics">following</span>
+                <h2 class="info" id="following">9</h2>
+              </div>
+            </div>
+
+            <div class="content_container icons">
+              <img
+                src="./assets/icon-location.svg"
+                class="icon location_logo"
+                alt="location"
+              />
+              <span class="icon_scan" id="location">San Francisco</span>
+              <div class="icon_space">
+                <a
+                  href="https://twitter.com/${
+                  users.twitter_username}"
+                  target="_blank"
+                >
+                  <img
+                    src="./assets/icon-twitter.svg"
+                    class="icon twitter_logo"
+                    alt="twitter"
+                  />
+                  <span class="icon_scan" id="twitter_account"
+                    >Not available</span
+                  >
+                </a>
+              </div>
+            </div>
+            <div class="content_container icons">
+              <a href="https://github.com/" target="_blank">
+                <img
+                  src="./assets/icon-website.svg"
+                  class="icon web_icon"
+                  alt="website"
+                />
+                <span class="icon_scan" id="blog">https://github.blog</span>
+              </a>
+              <div class="icon_space">
+                <img
+                  src="./assets/icon-company.svg"
+                  class="icon company_icon"
+                  alt="company"
+                />
+                <span class="icon_scan" id="company">git user</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
